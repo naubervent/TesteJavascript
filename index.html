@@ -19,10 +19,12 @@
             ];
 
             for(usuario of usuarios){
+                console.log("O " + usuario.nome + "possui as habilidades: "); 
 
-                for(habilidade of usuario.habilidades)
+                for(habilidade of usuario.habilidades){
+                    console.log(habilidade)
+                }             
 
-                console.log("O " + usuario.nome + " possui as habilidades: " + habilidade);
             }
 
         </script>
