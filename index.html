@@ -3,25 +3,26 @@
         <title>Curso de Javascript</title>
     </head>
     <body>
-        <div id="app">
-            <input type="text" name="nome" />
-            <button class="botao">Adicionar</button>
-            <div class="box"></div>            
-        </div>
+        
 
         
         <script>
-            var inputElement = document.querySelector('input[name=nome]');
-            var btnElement = document.querySelector('button.botao');
-            var boxElement = document.querySelector('.box');
+            var usuarios = [
+                {
+                    nome: "Diego",
+                    habilidades: ["Javascript", "ReactJS", "Redux"],
+                },
+                {
+                    nome: "Gabriel",
+                    habilidades: ["VueJs", "Ruby and Rails", "Elixir"]
+                }
+            ];
 
-            btnElement.onclick = function(){
-                var text = inputElement.value;
+            for(usuario of usuarios){
 
-                boxElement.style.width = 100;
-                boxElement.style.height = 100;
-                boxElement.style.backgroundColor = text;
-                
+                for(habilidade of usuario.habilidades)
+
+                console.log("O " + usuario.nome + " possui as habilidades: " + habilidade);
             }
 
         </script>
