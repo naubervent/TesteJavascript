@@ -1,0 +1,32 @@
+<html>
+    <head>
+        <title>Curso de Javascript</title>
+    </head>
+    <body>
+        <div id="app">
+            <input type="text" name="nome" />
+            <button class="botao">Adicionar</button>
+            <div class="box"></div>            
+        </div>
+
+        
+        <script>
+            var inputElement = document.querySelector('input[name=nome]');
+            var btnElement = document.querySelector('button.botao');
+            var boxElement = document.querySelector('.box');
+
+            btnElement.onclick = function(){
+                var text = inputElement.value;
+
+                boxElement.style.width = 100;
+                boxElement.style.height = 100;
+                boxElement.style.backgroundColor = text;
+                
+            }
+
+        </script>
+
+
+
+    </body>
+</html>
