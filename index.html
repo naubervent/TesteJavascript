@@ -3,31 +3,18 @@
         <title>Curso de Javascript</title>
     </head>
     <body>
+
+        <div id="app">
+            <ul></ul> 
+            <input type="text" placeholder="Digite um todo">
+            <button>Adicionar</button>           
+        </div>
+
+        <script src="todos.js"></script>
         
 
         
-        <script>
-            var usuarios = [
-                {
-                    nome: "Diego",
-                    habilidades: ["Javascript", "ReactJS", "Redux"],
-                },
-                {
-                    nome: "Gabriel",
-                    habilidades: ["VueJs", "Ruby and Rails", "Elixir"]
-                }
-            ];
-
-            for(usuario of usuarios){
-                console.log("O " + usuario.nome + "possui as habilidades: "); 
-
-                for(habilidade of usuario.habilidades){
-                    console.log(habilidade)
-                }             
-
-            }
-
-        </script>
+        
 
 
 
